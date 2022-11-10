@@ -1,0 +1,28 @@
+@import "./variables";
+
+.flex {
+  display: flex;
+}
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-48 {
+  gap: 24px;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.round-110 {
+  border-radius: 110px;
+}
+
+.shadow-1 {
+  box-shadow: 10px 10px 50px 5px rgba(255, 91, 46, 0.08);
+}

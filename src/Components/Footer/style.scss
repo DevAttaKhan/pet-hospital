@@ -1,0 +1,56 @@
+@import "../../sass/variables";
+
+.footer {
+  position: relative;
+  color: #fff;
+  padding: 72px 0 187px;
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  a {
+    color: inherit;
+  }
+
+  &__paragraph {
+    max-width: 424px;
+    font-size: $font-sm-3;
+    white-space: 2px;
+    color: #e5e5e5;
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  &__nav-heading {
+    margin-bottom: 24px;
+    h5 {
+      font-size: $font-md-0;
+      font-weight: 600;
+    }
+  }
+
+  &__nav-links {
+    &.contacts {
+      li {
+        margin-bottom: 40px;
+      }
+    }
+    li {
+      margin-bottom: 16px;
+      a {
+        font-size: $font-sm-3;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: $color-secondary;
+    padding-block: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+  }
+}

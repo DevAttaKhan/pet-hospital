@@ -1,0 +1,70 @@
+@import "../../sass/variables";
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  z-index: 1;
+  .container {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  nav {
+    ul {
+      gap: 48px;
+      li {
+        a {
+          font-size: $font-md-0;
+          color: $color-primary;
+          font-weight: 600;
+          transition: 0.3s;
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-link__active {
+  position: relative;
+  transition: 0.3s;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 35px;
+    width: 3px;
+    background-color: $color-primary;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    animation: scale-up-center 0.3s;
+    transform-origin: top;
+    backface-visibility: hidden;
+  }
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 108px;
+    background-color: $color-primary;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

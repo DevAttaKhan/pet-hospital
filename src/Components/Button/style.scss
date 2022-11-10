@@ -1,0 +1,21 @@
+@import "../../sass/variables";
+
+.btn-primary {
+  display: flex;
+  gap: 13px;
+  color: #fff;
+  background-color: $color-secondary;
+  align-items: center;
+  padding: 27px 52px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  font-family: "Inter";
+  border: none;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+}

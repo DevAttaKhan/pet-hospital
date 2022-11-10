@@ -1,0 +1,28 @@
+.capsule {
+  position: relative;
+  padding: 40px;
+
+  //   min-height: 175px;
+  //   max-width: 426px;
+  background-color: #fff;
+  box-shadow: 5px 5px 25px rgba(0, 9, 88, 0.1);
+  border-radius: 151px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  font-size: 36px;
+  line-height: 50px;
+  color: #000958;
+
+  cursor: pointer;
+  &__icon {
+    width: 80px;
+    height: 80px;
+    background-color: #2ddafc;
+    border-radius: 1000px;
+    display: grid;
+    place-items: center;
+  }
+}
